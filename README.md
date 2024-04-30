@@ -1,6 +1,6 @@
 # Nutricampus
 
-- [Sobre o NutriCampos](#sobre-o-nutricampos)
+- [Sobre o NutriCampus](#sobre-o-nutricampus)
 - [Identificação](#identificação)
 - [Comunicação](#comunicação)
 - [Instalação](#instalação)
