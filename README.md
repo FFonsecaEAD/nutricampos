@@ -1,9 +1,21 @@
 # Nutricampos
 
+
+
+
+- [Sobre o NutriCampos](#sobre-o-nutricampos)
+- [Identificação](#identificação)
+- [Comunicação](#comunicação)
+- [Instalação](#instalação)
+- <!-- - [Como contribuir](#como-contribuir) -->
+<!-- - [FAQ](#perguntas-frequentes-faq)
+- [Pacotes (módulos)](#pacotes-módulos)
+- [Upgrade](#upgrade) -->
+
+## Sobre o NutriCampos
 Sistema de Controle Alimentar Escolar - Este nome junta "Nutri" (de nutrição) com "Campus", evocando a importância da alimentação saudável no ambiente escolar e reforçando a ideia de um sistema focado em promover hábitos alimentares nutritivos entre os alunos.
 
-
-1.     **Identificação**
+## Identificação
 
 Curso: Qualificação Profissional
 
@@ -14,155 +26,112 @@ Semestre/2024Professor: Fernando José Corrêa da Fonseca
 
 Tempo Previsto: 45(quarenta e cinco) dias
 
+Desenvolvimento de Software para Controle de Cardápio Escolar
 
-**Desenvolvimento de Software para Controle de Cardápio Escolar**
+## Introdução
 
-**1.     ** **Introdução**
-
-O software de
-controle de cardápio escolar é uma ferramenta essencial para escolas e
+O software de controle de cardápio escolar é uma ferramenta essencial para escolas e
 instituições educacionais gerenciarem eficientemente as refeições servidas aos
 alunos. Este documento estabelece os requisitos e detalha o processo de
 desenvolvimento do software, que será construído utilizando PHP como linguagem
 de programação, o framework Laravel, e o framework Bootstrap para o frontend.
 
-**2.     **** Objetivo**
+## Objetivo
 
-O objetivo
-deste projeto é desenvolver um sistema de controle de cardápio escolar que
+O objetivo deste projeto é desenvolver um sistema de controle de cardápio escolar que
 permita às escolas criar, gerenciar e comunicar os cardápios de refeições aos
 alunos, funcionários e responsáveis, garantindo uma alimentação saudável e
 balanceada.
 
-**3.     **** Especificação Técnica**
+## Especificação Técnica
 
-**3.1.   **** Tecnologias Utilizadas**
+### Tecnologias Utilizadas
 
-·Linguagem de Programação: PHP
+- Linguagem de Programação: PHP
+- Framework Web: Laravel
+- Banco de Dados: MySQL ou MariaDB
+- Frontend: HTML5, CSS3 (Bootstrap), JavaScript (opcional)
 
-Framework Web: Laravel
-
-Banco de Dados: MySQL ou MariaDB
-
-Frontend: HTML5, CSS3 (Bootstrap), JavaScript (opcional)
-
-3.2.   **Funcionalidades Principais**
+### Funcionalidades Principais
 
 O software deve incluir as seguintes funcionalidades principais:
 
- **3.2.1.** **Cadastro de Cardápios:**
+ #### Cadastro de Cardápios:
 
-Ø
-  Permitir que os usuários cadastrem cardápios para café da manhã, almoço e jantar.
+  - Permitir que os usuários cadastrem cardápios para café da manhã, almoço e jantar.
+  - Associar cada cardápio a uma data específica.
+  - Incluir informações detalhadas sobre cada item do cardápio, como nome, descrição, ingredientes,informações nutricionais e restrições alimentares.
 
-Ø
-  Associar cada cardápio a uma data específica.
+ #### Gerenciamento de Cardápios:
 
-Ø
-  Incluir informações detalhadas sobre cada item do cardápio, como nome, descrição, ingredientes,
-informações nutricionais e restrições alimentares.
+  - Permitir que os usuários editem, excluam ou visualizem cardápios existentes.
+  - Capacidade de duplicar cardápios para datas futuras.
 
- **3.2.2.** **2. Gerenciamento de Cardápios:**
+ #### Comunicação de Cardápios:
 
-Ø
-  Permitir que os usuários editem, excluam ou visualizem cardápios existentes.
+  - Oferecer uma interface para comunicar os cardápios aos alunos, funcionários e responsáveis.
+  - Opções de visualização dos cardápios por semana, mês ou dia específico.
+  - Capacidade de imprimir ou baixar os cardápios em formato PDF.
 
-Ø
-  Capacidade de duplicar cardápios para datas futuras.
+ #### Controle de Estoque:
 
- **3.2.3.** **3. Comunicação de Cardápios:**
+  -Integrar um sistema de controle de estoque para acompanhar os ingredientes necessários para preparar os pratos do cardápio.
+  -Alertar automaticamente quando os ingredientes estiverem em baixa quantidade ou próximos da data de validade.
 
-Ø
-  Oferecer uma interface para comunicar os cardápios aos alunos, funcionários e responsáveis.
+ #### Relatórios e Estatísticas (opcional):
 
-Ø
-  Opções de visualização dos
-cardápios por semana, mês ou dia específico.
+  - Gerar relatórios sobre a frequência de consumo de determinados pratos.
+  - Estatísticas sobre a aceitação dos cardápios pelos alunos.
+  - Relatórios nutricionais para análise da qualidade das refeições oferecidas.**
 
-Ø
-  Capacidade de imprimir ou baixar os cardápios em formato PDF.
-
- **3.2.4.** **4. Controle de Estoque (opcional):**
-
-Ø
-  Integrar um sistema de controle de estoque para acompanhar os ingredientes necessários para preparar os pratos do cardápio.
-
-Ø
-  Alertar automaticamente quando os ingredientes estiverem em baixa quantidade ou próximos da data de validade.
-
- **3.2.5.** **5. Relatórios e Estatísticas (opcional):**
-
-Ø
-  Gerar relatórios sobre a frequência de consumo de determinados pratos.
-
-Ø
-  Estatísticas sobre a aceitação dos cardápios pelos alunos.
-
-Ø
-  Relatórios nutricionais para análise da qualidade das refeições oferecidas.
-
-**3.3.   **** Divisão de Tarefas e Estimativa de Tempo**
+### Divisão de Tarefas e Estimativa de Tempo
 
 O projeto será dividido em etapas com duração estimada de 45 dias:
 
- **3.3.1.** **1. Planejamento e Configuração do Ambiente (7 dias)**
+ #### Planejamento e Configuração do Ambiente (7 dias)
+ 
 
-Ø
-  Análise de Requisitos (2 dias)
+## Análise de Requisitos (2 dias)
+  - Configuração do Ambiente de Desenvolvimento (2 dias)
+  - Criação do Esqueleto do Projeto (3 dias)**
 
-Ø
-  Configuração do Ambiente de Desenvolvimento (2 dias)
+ #### Desenvolvimento do Backend (14 dias)
 
-Ø
-  Criação do Esqueleto do Projeto (3 dias)
+  - Desenvolvimento dos Modelos e Migrações (5 dias)
+  - Desenvolvimento dos Controladores (5 dias)
+  - Autenticação e Autorização (4 dias)
 
- **3.3.2.** **2. Desenvolvimento do Backend (14 dias)**
+ #### Desenvolvimento do Frontend (14 dias)
+  - Design das Páginas (7 dias)
+  - Integração com Backend (4 dias)
+  - Testes de Usabilidade (3 dias)
 
-Ø
-  Desenvolvimento dos Modelos e Migrações (5 dias)
+ #### Implementação de Recursos Adicionais e Testes (7 dias)
 
-Ø
-  Desenvolvimento dos Controladores (5 dias)
+  - Implementação de Recursos Extras (4 dias)
+  - Testes Funcionais (2 dias)
+  - Correção de Bugs (1 dia)
 
-Ø
-  Autenticação e Autorização (4 dias)
+ #### Preparação para Lançamento (3 dias)
 
- **3.3.3.** **3. Desenvolvimento do Frontend (14 dias)**
+  - Documentação (2 dias)
+  - Preparação para Implantação (1 dia)
 
-Ø
-  Design das Páginas (7 dias)
+#### Implantação e Lançamento (1 dia)
 
-Ø
-  Integração com Backend (4 dias)
-
-Ø
-  Testes de Usabilidade (3 dias)
-
- **3.3.4.** **4. Implementação de Recursos Adicionais e Testes (7 dias)**
-
-Ø
-  Implementação de Recursos Extras (4 dias)
-
-Ø
-  Testes Funcionais (2 dias)
-
-Ø
-  Correção de Bugs (1 dia)
-
- **3.3.5.** **5. Preparação para Lançamento (3 dias)**
-
-Ø
-  Documentação (2 dias)
-
-Ø
-  Preparação para Implantação (1 dia)
-
- **3.3.6.** **6. Implantação e Lançamento (1 dia)**
-
-**4.     ** **4. Considerações Finais**
+## Considerações Finais
 
 O desenvolvimento deste software será conduzido seguindo as práticas recomendadas
 de desenvolvimento ágil, com ênfase na colaboração entre os membros da equipe e
 a entrega contínua de valor. Durante o processo de desenvolvimento, será
 crucial manter uma comunicação eficaz entre os membros da equipe e realizar
 revisões regulares para garantir o progresso suave do projeto.
+
+| Canal de comunicação                                                         | Objetivos                                                                                                                                                                                                          |
+|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Discord                                         | - Tirar dúvidas <br>- Discussões de como instalar a plataforma<br> - Discussões de utilizações do VSCode, Github, PHP, Bootstrap, Banco de dados e Laravel<br> - Suporte entre membros da atividade academica<br> - FAQ da comunidade (sobre o produto e funcionalidades) |
+| [Issues do Github](https://github.com/ffonsecaead/nutricampos/issues/new/choose) | - Sugestão de novas funcionalidades<br> - Reportar bugs<br> - Discussões técnicas                                                                                                                                  |
+
+## Instalação
+
+Consulte o passo a passo no [guia de instalação](INSTALL.md).
