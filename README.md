@@ -92,7 +92,7 @@ O projeto será dividido em etapas com duração estimada de 45 dias:
 ## Análise de Requisitos (2 dias)
 
 - Configuração do Ambiente de Desenvolvimento (2 dias)
-- Criação do Esqueleto do Projeto (3 dias)**
+- Criação do Esqueleto do Projeto (3 dias)
 
 #### Desenvolvimento do Backend (14 dias)
 
