@@ -1,4 +1,4 @@
-# Nutricampos
+# Nutricampus
 
 - [Sobre o NutriCampos](#sobre-o-nutricampos)
 - [Identificação](#identificação)
@@ -10,7 +10,7 @@
 - [Pacotes (módulos)](#pacotes-módulos)
 - [Upgrade](#upgrade) -->
 
-## Sobre o NutriCampos
+## Sobre o NutriCampus
 
 Sistema de Controle Alimentar Escolar - Este nome junta "Nutri" (de nutrição) com "Campus", evocando a importância da alimentação saudável no ambiente escolar e reforçando a ideia de um sistema focado em promover hábitos alimentares nutritivos entre os alunos.
 
@@ -137,10 +137,10 @@ O projeto "NutriCampus" busca promover uma alimentação saudável e consciente 
 
 | Canal de comunicação                                                        | Objetivos                                                                                                                                                                                                                                                                                   |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Reuniões Presenciais                                                         | Serão realizadas reuniões presenciais periódicas entre os estudantes e<br />o professor para discutir o progresso do projeto, compartilhar ideias e t<br />omar decisões estratégicas.                                                                                                 |
+| Reuniões Presenciais                                                         | Serão realizadas reuniões presenciais periódicas entre os estudantes e<br />o professor para discutir o progresso do projeto, compartilhar ideias e<br />tomar decisões estratégicas.                                                                                                  |
 | Comunicação Online                                                          | Utilizaremos plataformas de comunicação online, como grupos no<br />Discord, Slack, Microsoft Teams ou Google Meet, para facilitar a comunicação <br />instantânea entre os membros da equipe, permitindo troca rápida de <br />informações e discussões sobre questões urgentes. |
-| E-mail                                                                        | O professor estará disponível por e-mail para esclarecer dúvidas, <br />fornecer orientações e feedback aos estudantes, além de manter <br />contato com possíveis contribuintes externos interessados em <br />participar do projeto.                                               |
-| [Issues do Github](https://github.com/ffonsecaead/nutricampos/issues/new/choose) | Sugestão de novas funcionalidades `<br>` - Reportar bugs `<br>` - Discussões técnicas                                                                                                                                                                                                |
+| E-mail                                                                        | O professor estará disponível por e-mail para esclarecer dúvidas,<br />fornecer orientações e feedback aos estudantes, além de manter <br />contato com possíveis contribuintes externos interessados em <br />participar do projeto.                                                |
+| [Issues do Github](https://github.com/ffonsecaead/nutricampos/issues/new/choose) | Sugestão de novas funcionalidades;<br />Reportar bugs.<br />Discussões técnicas                                                                                                                                                                                                          |
 
 #### Responsabilidades dos Envolvidos:
 
