@@ -1,0 +1,639 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+html {
+	min-height:100%;
+	position:relative;
+	background-color: #FDF5E6;
+}
+
+body {
+	max-width: 1500px;
+	margin: auto;
+	box-shadow: 0 0 4px;
+}
+
+/*CABEÇALHO GERAL*/
+header {
+	width: 1500px;
+	overflow: hidden;
+	background-color: #d45446;
+	color: #e6e6e6;
+	height: 120px;
+}
+
+/*TÍTULO*/
+header h1 {
+	font-size: 80px;
+	font-weight: 700;
+	margin: 0px;
+	margin-left: 150px;
+	float: left;
+}
+
+/*FLEXBOX PRINCIPAL*/
+.box {
+	max-width: 1500px;
+	display: flex;
+	flex-direction: row;
+	background-color: #1e272a;
+	min-height: 700px;
+}
+
+/*BARRA LATERAL*/
+aside {
+	flex: 5%;
+	background-color: #d45446;
+	text-align: center;
+}
+
+/*LINKS*/
+aside a {
+	display: block;
+	text-decoration: none;
+	background-color: #e6e6e6;
+	width: 120px;
+	line-height: 120px;
+	border-radius: 50%;
+	margin-bottom: 50px;
+	position: relative;
+	left: 20px;
+	top: 112px;
+	box-shadow: 1px 1px black;
+	font-size: 50px;
+	font-weight: bold;
+	color: #1e272a;
+}
+/*LINKS HOVER*/
+aside a:hover {
+	background-color: #479f76;
+	left: 40px;
+}
+/*LINK ATIVO*/
+.active {
+	background-color: #198754;
+	left: 40px;
+}
+
+/*CORPO DA PÁGINA*/
+main {
+	flex: 95%;
+	background-color: #1e272a;
+	box-shadow: 0 0 10px;
+}
+
+section {
+	padding-bottom: 40px;
+	font-size: 20px;
+	color: #e6e6e6;
+}
+
+/* ---------- INDEX.HTML ---------- /*
+
+/*CABEÇALHO DO CORPO*/
+.header {
+	background-color: #1e272a;
+	text-align: center;
+	color: #e6e6e6;
+	height: 180px;
+}
+
+/*TÍTULO DO CABEÇALHO DO CORPO*/
+.header h1 {
+	font-size: 50px;
+	margin-bottom: -10px;
+}
+
+/*CALENDÁRIO NO TOPO*/
+.data {
+	font-size: 20px;
+	font-weight: 600;
+	margin: 40px;
+	padding: 10px;
+	float: right;
+	text-transform: capitalize;
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 1px 1px black;
+}
+
+/*DATA DO CARDÁPIO*/
+.dia {
+	font-size: 25px;
+	background-color: #198754;
+	width: 30%;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 2px 2px rgba(20, 20, 20, 0.4);
+	border: 1px solid black;
+	text-transform: capitalize;
+}
+
+.header2 {
+	overflow: hidden;
+	background-color: #1e272a;
+	text-align: center;
+	color: #e6e6e6;
+	height: 80px;
+}
+
+/*CONTÂINER DO CARDÁPIO*/
+.menu {
+	display: flex;
+	flex-direction: row;
+	background-color: #1e272a;
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
+/*CARTÃO DE CADA REFEIÇÃO*/
+.card {
+	flex: 25%;
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	width: 290px;
+	padding: 10px;
+	margin: 10px;
+	margin-bottom: 50px;
+	border-radius: 25px;
+	font-size: 18px;
+	box-shadow: 10px 10px rgba(20, 20, 20, 0.4);
+	background-color: #cf4030;
+	color: #e6e6e6;
+}
+
+/*LISTA DOS PRATOS*/
+.lista {
+	margin-top: 0px;
+}
+
+/*CAMPO DA IMAGEM*/
+.ilust {
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.ilust img {
+	height: 140px;
+	border-radius: 10px;
+}
+
+h2 {
+	text-align: center;
+	margin-top: 0px;
+}
+
+/* ---------- CALENDÁRIO POPUP ---------- */
+
+
+.calendario {
+	width: 412px;
+	height: 410px;
+	margin: 120px auto;
+	background: #f8fbff;
+	border-radius: 10px;
+	padding: 30px;
+}
+
+.cal-head {
+	width: 350px;
+	margin: auto;
+	background: #d45446;
+	color: #e6e6e6;
+	font-weight: 600;
+	padding: 10px 20px;
+	border-radius: 7px;
+	align-content: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.cal-body {
+	width: 350px;
+	margin: auto;
+	padding: 10px;
+}
+
+.week-days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	font-weight: 600;
+	color: #d45446;
+}
+
+.week-days div {
+	display: grid;
+	place-items: center;
+	height: 50px;
+}
+
+.calendar-days {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 2px;
+}
+
+.calendar-days div {
+	width: 37px;
+	height: 33px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px;
+	cursor: pointer;
+	color: #0A0921;
+  	font-weight: 600;
+}
+
+.calendar-days div:hover {
+	background: #ecb3ac;
+	border-radius: 20%;
+	color: #f8fbff;
+	font-weight: 700;
+}
+
+.calendar-days div.current-date {
+  color: #f8fbff;
+  background-color: #d45446;
+  border-radius: 20%;
+}
+
+/* ---------- EDIT.HTML ---------- */
+
+/* ---------- LOGIN NO TOPO ---------- */
+
+.top-login {
+	font-size: 20px;
+	font-weight: 300;
+	margin: 40px;
+	float:right;
+}
+
+.top-login-form {
+	display: flex;
+	gap: 5px;
+}
+
+.top-login input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  border: none;
+  width: 150px;
+  border-radius: 3px;
+}
+
+.top-login button {
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+}
+
+button:hover {
+  background: #479f76;
+}
+
+.loginbtn {
+  background: #198754;
+  color: #e6e6e6;
+}
+
+/* ---------- FORMULÁRIOS ---------- */
+
+/* ---------- ÁREA DAS ABAS ---------- */
+
+.cadastros-card {
+	margin: auto;
+	margin-top: 60px;
+	width: 1202px;
+	border-radius: 25px;
+	box-shadow: 10px 10px rgba(20, 20, 20, 0.4);
+	background-color: #D45446;
+	color: #e6e6e6;
+}
+
+.tab-header {
+	text-align: center;
+	line-height: 50px;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+.tab-title {
+	text-align: center;
+	color: #1e272a;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #fff;
+  background-color: #e6e6e6;
+}
+
+.tab button {
+	background-color: inherit;
+	width: 150px;
+	font-size: 40px;
+	color: #1E272A;
+	font-family: "Open Sans";
+	font-weight: 400;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+}
+
+.tab button:hover {
+	background-color: #479f76;
+	color: #e6e6e6;
+}
+
+.tab button.active {
+	background-color: #198754;
+	color: #e6e6e6;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+} 
+
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.form {
+	margin-left: 140px;
+	margin-bottom: 10px;
+	width: 200px;
+	text-shadow: 1px 1px black;
+}
+
+.form-button {
+	background-color: #e6e6e6;
+	border: none;
+	padding: 15px 32px;
+	border-radius: 10px;
+	left: 60px;
+	box-shadow: 1px 1px black;
+	font-weight: 600;
+}
+
+.form-button:hover {
+	background-color: #479f76;
+	font-weight: 700;
+}
+
+.cadastro-tab {
+	background-color: #fefefe;
+	margin: 1% auto;
+	border: 1px solid #888;
+	width: 100%;
+	border-radius: 15px;
+}
+
+/* ---------- TÍTULOS DAS ABAS ---------- */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #1E272A;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  width: 120px;
+  min-height: 58px;
+  left: 50%;
+  margin-left: -60px;
+  position: absolute;
+  z-index: 1;
+  font-size: 18px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* ---------- TABELA ---------- */
+
+.tabcontent-table {
+min-width: 280px;
+}
+
+.tabcontent-table, .tabcontent-td, .tabcontent-th {
+	border: 2px solid;
+	color: #1e272a;
+	background: #e6e6e6;
+	border-collapse: collapse;
+	padding: 10px;
+	margin: 20px;
+}
+
+.sheet:hover {
+	background-color: #479f76;
+	cursor: pointer;
+}
+
+.edit {
+	font-weight: bold;
+}
+
+.edit:hover {
+	background-color: #479f76;
+	cursor: pointer;
+}
+
+.td-data {
+	text-align: center;
+}
+
+.user-sheet {
+	background: white;
+	width: 1300px;
+	margin: 120px auto;
+	border-radius: 10px;
+	padding: 30px;
+	color: black;
+}
+
+.user-sheet-table, .user-sheet-th, .user-sheet-td {
+	border: 0px;
+	padding: 3px 10px;
+	background: white;
+}
+
+.user-sheet-td {
+	border-bottom: 2px solid black;
+}
+
+.user-sheet-th {
+	text-align: left;
+	padding-top: 10px;
+}
+
+.table-group {
+	border-bottom: 2px solid black;
+}
+
+/* ----------  FORMULÁRIO DE CADASTRO ----------  */
+
+.open-button {
+	background-color: #e6e6e6;
+	color: 1e272a;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	margin: 0px 0px 20px 20px;
+	width: 280px;
+}
+
+.form-popup {
+  display: none;
+  bottom: 0;
+  right: 15px;
+}
+
+.cadastro {
+	display: flex;
+	gap: 16px;
+}
+
+.coluna-50 {
+	flex: 50%;
+}
+
+.coluna-30 {
+	flex: 30%;
+}
+
+fieldset {
+	margin: 10px;
+	font-weight: bold;
+}
+
+.cadastro input[type=text], input[type=password], input[type=date] {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+.cadastro input[type=text]:focus, input[type=password]:focus, input[type=date]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+select {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
+
+.cancelbtn {
+	background-color: #d45446;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 14px 20px;
+	color: #e6e6e6;
+}
+
+.cancelbtn:hover {
+	background-color: #d8665a;
+	font-weight: 700;
+}
+
+.signupbtn {
+	background-color: #198754;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 14px 20px;
+	color: #e6e6e6;
+}
+
+.signupbtn:hover {
+	background-color: #479f76;
+	font-weight: 700;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 49%;
+  margin: 0.5%;
+  border: 0;
+}
+
+.container {
+	padding: 16px;
+	color: #1E272A;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #1e272a;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* ---------- */
